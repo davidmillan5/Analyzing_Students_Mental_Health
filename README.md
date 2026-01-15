@@ -118,8 +118,20 @@ CREATE TABLE students (
 
 4. Import the data in the csv into pgAdmin to create the whole table in the database.
 
+5. Table General Overview Query
 
-5. Solution Query
+| inter_dom | region | gender | academic | age | age_cate | stay | stay_cate | japanese | japanese_cate | english | english_cate | intimate | religion | suicide | dep | deptype | todep | depsev | tosc | apd | ahome | aph | afear | acs | aguilt | amiscell | toas | partner | friends | parents | relative | profess | phone | doctor | reli | alone | others | internet | partner_bi | friends_bi | parents_bi | relative_bi | professional_bi | phone_bi | doctor_bi | religion_bi | alone_bi | others_bi | internet_bi |
+|-----------|--------|--------|----------|-----|----------|------|-----------|----------|----------------|---------|---------------|----------|----------|---------|-----|---------|-------|--------|------|-----|--------|-----|-------|-----|---------|-----------|------|---------|---------|---------|----------|----------|-------|--------|------|-------|----------|------------|-------------|-------------|-------------|--------------|------------------|----------|-----------|-------------|----------|-----------|-------------|
+| Inter | SEA | Male | Grad | 24 | 4 | 5 | Long | 3 | Average | 5 | High | NULL | Yes | No | No | No | 0 | Min | 34 | 23 | 9 | 11 | 8 | 11 | 2 | 27 | 91 | 5 | 5 | 6 | 3 | 2 | 1 | 4 | 1 | 3 | 4 | NULL | Yes | Yes | Yes | No | No | No | No | No | No | No | No |
+| Inter | SEA | Male | Grad | 28 | 5 | 1 | Short | 4 | High | 4 | High | NULL | No | No | No | No | 2 | Min | 48 | 8 | 7 | 5 | 4 | 3 | 2 | 10 | 39 | 7 | 7 | 7 | 4 | 4 | 4 | 4 | 1 | 1 | 1 | NULL | Yes | Yes | Yes | No | No | No | No | No | No | No | No |
+| Inter | SEA | Male | Grad | 25 | 4 | 6 | Long | 4 | High | 4 | High | Yes | Yes | No | No | No | 2 | Min | 41 | 13 | 4 | 7 | 6 | 4 | 3 | 14 | 51 | 3 | 3 | 3 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | NULL | No | No | No | No | No | No | No | No | No | No | No |
+| Inter | EA | Female | Grad | 29 | 5 | 1 | Short | 2 | Low | 3 | Average | No | No | No | No | No | 3 | Min | 37 | 16 | 10 | 10 | 8 | 6 | 4 | 21 | 75 | 5 | 5 | 5 | 5 | 5 | 2 | 2 | 2 | 4 | 4 | NULL | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No |
+| Inter | SEA | Female | Under | 20 | 2 | 2 | Medium | 3 | Average | 4 | High | No | Yes | No | No | No | 6 | Mild | 46 | 10 | 4 | 5 | 4 | 3 | 2 | 11 | 39 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | No | No | No | No | No | No | No | No | No | No | No |
+| Inter | EA | Male | Under | 19 | 2 | 1 | Short | 3 | Average | 3 | Average | No | No | No | No | No | 7 | Mild | 40 | 39 | 4 | 5 | 4 | 3 | 2 | 15 | 72 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | No | No | No | No | No | No | No | No | No | No | No |
+
+pending....
+
+6. Solution Query
 
 ```sql
 SELECT
