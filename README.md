@@ -118,3 +118,45 @@ CREATE TABLE students (
 
 4. Import the data in the csv into pgAdmin to create the whole table in the database.
 
+
+5. Solution Query
+
+```sql
+SELECT
+	stay AS stay,
+	ROUND(COUNT(inter_dom),2) AS count_int,
+	ROUND(AVG(todep),2) AS average_phq,
+	ROUND(AVG(tosc),2) AS average_scs,
+	ROUND(AVG(toas),2) AS average_as
+FROM
+	students
+WHERE 
+	inter_dom = 'Inter'
+GROUP BY
+	stay
+ORDER BY
+	stay DESC
+LIMIT
+	9;
+
+```
+
+
+### Results
+
+| stay | count_int | average_phq | average_scs | average_as |
+|------|-----------|-------------|-------------|------------|
+| 10   | 1.00      | 13.00       | 32.00       | 50.00      |
+| 8    | 1.00      | 10.00       | 44.00       | 65.00      |
+| 7    | 1.00      | 4.00        | 48.00       | 45.00      |
+| 6    | 3.00      | 6.00        | 38.00       | 58.67      |
+| 5    | 1.00      | 0.00        | 34.00       | 91.00      |
+| 4    | 14.00     | 8.57        | 33.93       | 87.71      |
+| 3    | 46.00     | 9.09        | 37.13       | 78.00      |
+| 2    | 39.00     | 8.28        | 37.08       | 77.67      |
+| 1    | 95.00     | 7.48        | 38.11       | 72.80      |
+
+
+### Conclusions
+
+Based on the the query that we made to extract the information... Explore and analyze the students data to see how the length of stay (stay) impacts the average mental health diagnostic scores of the international students present in the study.
